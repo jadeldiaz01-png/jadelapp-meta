@@ -1,26 +1,23 @@
+from __future__ import annotations
+
+from datetime import date
+from html import escape
+
 import streamlit as st
 
-st.title("JadelApp")
+APP_NAME = "Jadel Pages API"
+APP_DOMAIN = "jadelapp-meta.streamlit.app"
+CONTACT_EMAIL = "darklife_jade@hotmail.com"
+BASE_URL = f"https://{APP_DOMAIN}"
+EFFECTIVE_DATE = date(2026, 7, 18)
 
-st.header("Política de Privacidad")
+VALID_VIEWS = {
+    "home",
+    "privacy",
+    "terms",
+    "data-deletion",
+}
 
-st.write("""
-Esta aplicación utiliza las APIs de Meta para administrar contenido autorizado por el usuario.
 
-No vendemos información personal.
-
-Los datos obtenidos mediante Meta se utilizan únicamente para las funciones autorizadas por el usuario.
-
-Contacto:
-darklife_jade@hotmail.com
-""")
-
-st.header("Eliminación de Datos")
-
-st.write("""
-Para solicitar la eliminación de datos, envíe un correo a:
-
-darklife_jade@hotmail.com
-
-La solicitud será procesada conforme a las políticas de Meta.
-""")
+def get_view() -> str:
+    """Return a supported public page from the
