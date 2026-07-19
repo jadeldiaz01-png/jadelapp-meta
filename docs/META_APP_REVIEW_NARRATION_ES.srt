@@ -1,0 +1,27 @@
+1
+00:00:00,000 --> 00:00:15,000
+Esta es Jadel Pages API en jadelapp-meta.streamlit.app. La aplicación permite que un administrador autorizado seleccione una página de Facebook y publique contenido únicamente después de una confirmación explícita.
+
+2
+00:00:15,000 --> 00:00:35,000
+La aplicación publica su política de privacidad, sus condiciones del servicio y las instrucciones para solicitar la eliminación de datos. Los tokens no se muestran ni se guardan en GitHub.
+
+3
+00:00:35,000 --> 00:01:10,000
+Ahora iniciamos Facebook Login. Se solicitan únicamente pages_show_list, pages_read_engagement y pages_manage_posts. El usuario puede cancelar o autorizar. No se solicitan permisos de anuncios, mensajes ni grupos.
+
+4
+00:01:10,000 --> 00:01:40,000
+Jadel Pages API utiliza pages_show_list para recuperar únicamente las páginas que administra la persona autenticada. La aplicación no conecta una página automáticamente; el usuario debe seleccionarla.
+
+5
+00:01:40,000 --> 00:02:30,000
+La aplicación utiliza pages_manage_posts solamente después de que el usuario selecciona la página, revisa el mensaje, confirma que administra la página y pulsa Publicar.
+
+6
+00:02:30,000 --> 00:03:15,000
+La aplicación utiliza pages_read_engagement para leer y confirmar el contenido publicado por la página seleccionada. Se muestra el identificador, el mensaje, la fecha y el enlace permanente devueltos por Meta.
+
+7
+00:03:15,000 --> 00:03:45,000
+La publicación de prueba se elimina desde la aplicación y la sesión se desconecta. La demostración no realiza publicaciones automáticas y los tokens se eliminan de la memoria de sesión.
