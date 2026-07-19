@@ -1,0 +1,54 @@
+Jadel Pages API — texto de envío para Meta App Review
+
+URL de demostración:
+https://jadelapp-meta.streamlit.app/?view=review-demo
+
+URI de redirección OAuth:
+https://jadelapp-meta.streamlit.app/
+
+pages_show_list
+Jadel Pages API utiliza pages_show_list después de Facebook Login para mostrar al usuario las páginas que administra. El usuario selecciona manualmente una página antes de realizar cualquier otra acción. La aplicación no conecta páginas no seleccionadas ni activos de terceros.
+
+Pasos para reproducir:
+1. Abra la URL de demostración.
+2. Pulse Continuar con Facebook.
+3. Autorice los permisos solicitados.
+4. Observe la lista de páginas administradas devuelta por Meta.
+5. Seleccione manualmente una página de prueba.
+
+pages_manage_posts
+Jadel Pages API utiliza pages_manage_posts para publicar contenido escrito, revisado y confirmado expresamente por un administrador autorizado. La publicación se envía únicamente a la página seleccionada. La demostración no publica automáticamente.
+
+Pasos para reproducir:
+1. Complete Facebook Login.
+2. Seleccione una página administrada.
+3. Revise el mensaje de prueba.
+4. Marque la confirmación de autorización.
+5. Pulse Publicar.
+6. Compruebe el mensaje de éxito y el identificador devuelto.
+
+pages_read_engagement
+Jadel Pages API utiliza pages_read_engagement para leer y confirmar la publicación creada por la página seleccionada. La aplicación muestra el identificador, el mensaje, la fecha de creación y el enlace permanente al administrador autorizado.
+
+Pasos para reproducir:
+1. Cree la publicación desde la aplicación.
+2. Observe los datos recuperados nuevamente desde Meta.
+3. Abra el enlace permanente y compruebe que la publicación existe en Facebook.
+4. Regrese a Jadel Pages API.
+5. Elimine la publicación de prueba.
+6. Desconecte la sesión.
+
+Privacidad:
+https://jadelapp-meta.streamlit.app/?view=privacy
+
+Condiciones:
+https://jadelapp-meta.streamlit.app/?view=terms
+
+Eliminación de datos:
+https://jadelapp-meta.streamlit.app/?view=data-deletion
+
+Notas privadas para el revisor:
+- Proporcione aquí las credenciales de prueba únicamente dentro del formulario privado de Meta, nunca en GitHub ni en el video.
+- La cuenta debe tener acceso a la app y administrar una página de prueba.
+- No se requiere pago.
+- No se requiere Telegram, VPN ni acceso a una terminal.
